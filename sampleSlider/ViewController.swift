@@ -20,6 +20,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func sliderChanged(sender: UISlider) {
+        
+        print(sender.value)
+        
+        if sender.value <= 0.5 {
+            print("音が小さいです")
+        }else{
+            print("音が大きいです")
+        }
+    }
 
 }
 
